@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .big-box,.big-box1,.big-box2{
+        width:200px;
+        height:166px;
+        overflow: hidden;
+        box-shadow: 8px 8px 6px 8px #888888;
+        border-radius: 10px;
+        transition:all 0.5s;
+        border:solid 4px rgb(4, 248, 45);
+    }
+
+    .big-box{
+        position: fixed;
+        top:150px; left:90px;
+    }
+    .big-box1{
+        position:fixed;
+        top:150px; left:400px;
+    }
+    .big-box2{
+        position:fixed;
+        top:150px; left:700px;
+    }
+
+     #no1{
+        width:200px;
+        height:166px;
+        position:absolute;
+        top:0px;
+        box-sizing: border-box;
+        transition:all 0.5s;
+        z-index:10;
+       
+        
+    }
+     #no2{
+        width:200px;
+        height:145px;
+        position:absolute;
+        top:75px;
+        box-sizing: border-box;
+        transition:all 0.5s;
+        padding:5px;
+        margin-top:25px;
+        color:whitesmoke;
+        
+    }
+
+
+    .big-box:hover #no1{
+        height:159px;
+        top:0px;
+       
+    }
+    .big-box:hover #no2{
+        top:134px;
+        background-color:black;
+       
+    }
+    .big-box:hover{
+        width:200px;
+        height:304px;
+        top:50px;
+    }
+
+    .big-box1:hover{
+        width:200px;
+        height:304px;
+        top:50px;
+    }
+    .big-box1:hover #no1{
+        height:159px;
+        top:0px;
+       
+    }
+    .big-box1:hover #no2{
+        top:134px;
+        background-color:black;
+       
+    }
+
+
+    .big-box2:hover{
+        width:200px;
+        height:304px;
+        top:50px;
+    }
+    .big-box2:hover #no1{
+        height:159px;
+        top:0px;
+       
+    }
+    .big-box2:hover #no2{
+        top:134px;
+        background-color:black;
+       
+    }
+
+</style>
+<body>
+    <div class="big-box">
+        <img id="no1" src="https://images.unsplash.com/reserve/Af0sF2OS5S5gatqrKzVP_Silhoutte.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+        <p id="no2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus nulla aspernatur natus expedita optio, quasi eligendi necessitatibus dolor fuga a, deleniti ex velit amet quas hic?</p>
+    </div>
+
+    <div class="big-box1">
+            <img id="no1" src="https://tornadohunter.com/wp-content/uploads/2014/05/123-GJ-TORNADO-WEB-PIC-1000x610.jpg">
+            <p id="no2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus nulla aspernatur natus expedita optio, quasi eligendi necessitatibus dolor fuga a, deleniti ex velit amet quas hic?</p>
+        </div>
+
+        <div class="big-box2">
+                <img id="no1" src="https://www.whatsappprofiledpimages.com/wp-content/uploads/2018/12/whatsapp-dp3-300x282.gif">
+                <p id="no2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus nulla aspernatur natus expedita optio, quasi eligendi necessitatibus dolor fuga a, deleniti ex velit amet quas hic?</p>
+            </div>
+</body>
+</html>
